@@ -1,0 +1,37 @@
+head
+    title  My App
+    link(href='/css/bootstrap.css' rel='stylesheet')
+    script(src='/js/bootstrap.js' type='application/javascript')
+// Navigation
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.static-top
+    .container
+        //a.navbar-brand(href='#')
+        //    img(src='https://placeholder.pics/svg/150x50/888888/EEE/Logo' alt='...' height='36')
+        button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+        #navbarSupportedContent.collapse.navbar-collapse
+            ul.navbar-nav.ms-auto
+                li.nav-item
+                    a.nav-link.active(aria-current='page' href='/addProducts') Home
+                li.nav-item
+                    a.nav-link(href='/showProducts') Shop
+                li.nav-item
+                    a.nav-link(href='/add-product') Add Product
+                //li.nav-item.dropdown
+                //    a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+                //        | Dropdown
+                //    ul.dropdown-menu.dropdown-menu-end(aria-labelledby='navbarDropdown')
+                //        li
+                //            a.dropdown-item(href='/showProducts') Shop
+                //        li
+                //            a.dropdown-item(href='#') Another action
+                //        li
+                //            hr.dropdown-divider
+                //        li
+                //            a.dropdown-item(href='#') Something else here
+// Page Content
+//.container
+//    h1.mt-4 Logo Nav by Start Bootstrap
+//    p
+//        | The logo in the navbar is now a default Bootstrap feature in Bootstrap! Make sure to set the height
+//        | of the logo within the HTML or using CSS. For best results, use an SVG image as your logo.

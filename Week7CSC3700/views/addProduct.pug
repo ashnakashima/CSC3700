@@ -1,0 +1,19 @@
+include layouts/layoutBS
+.container
+    h2.mt-4  Add New Book
+    form(action='/product' method='post')
+        .form-group
+            label(for='title') Title
+            input#title.form-control(type='text' name='title')
+        .form-group
+            label(for='author') Author
+            input#author.form-control(type='text' name='author')
+        .form-group
+            label(for='price') Price
+            input#price.form-control(type='text' name='price')
+        button.btn.btn-primary(type='submit') Submit
+
+
+    //form(action='/product' method='post')
+    //    input(type='text' name='title')
+    //    button(type='submit') Add Product

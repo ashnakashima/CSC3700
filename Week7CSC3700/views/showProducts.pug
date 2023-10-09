@@ -1,0 +1,21 @@
+include layouts/layoutBS
+//
+//h2 #{title}
+
+.container
+    if products.length == 0
+        h2.mt-4 Sorry no current products
+    else
+        h2.mt-4 Current Products
+        table.table
+            thead
+                tr
+                    th(scope='col') Title
+                    th(scope='col') Author
+                    th(scope='col') Price
+            tbody
+                each p in products
+                    tr
+                        td= p.title
+                        td= p.author
+                        td= p.price
